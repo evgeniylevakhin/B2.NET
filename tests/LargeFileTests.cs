@@ -11,7 +11,7 @@ namespace B2Net.Tests {
 	public class LargeFileTests : BaseTest {
 		private B2Bucket TestBucket = new B2Bucket();
 		private B2Client Client = null;
-		private List<B2File> FilesToDelete = new List<B2File>();
+		private readonly List<B2File> FilesToDelete = new List<B2File>();
 		private string BucketName = "";
 
 #if NETFULL

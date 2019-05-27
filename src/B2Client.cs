@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace B2Net {
 	public class B2Client : IB2Client {
-		private B2Options _options;
+		private readonly B2Options _options;
 
 		public B2Client(B2Options options) {
 			_options = options;

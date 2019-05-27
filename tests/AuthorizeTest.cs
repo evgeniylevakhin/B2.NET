@@ -1,4 +1,5 @@
-﻿using B2Net;
+﻿using B2.Net.Tests;
+using B2Net;
 using B2Net.Models;
 using B2Net.Tests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -7,8 +8,8 @@ namespace B2Net.Tests {
 	[TestClass]
 	public class AuthorizeTest : BaseTest {
 		// TODO Change these to valid keys to run tests
-		string applicationKey = "K001+GGkBNcbJVj3LD4+e3s5pCUMQ7U";
-		string applicationKeyId = "00151189a8b4c7a0000000006";
+		readonly string applicationKey = "K001+GGkBNcbJVj3LD4+e3s5pCUMQ7U";
+		readonly string applicationKeyId = "00151189a8b4c7a0000000006";
 
 		[TestMethod]
 		public void CanWeAuthorize() {

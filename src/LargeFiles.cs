@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace B2Net {
 	public class LargeFiles : ILargeFiles {
-		private B2Options _options;
-		private HttpClient _client;
-		private string _api = "Large Files";
+		private readonly B2Options _options;
+		private readonly HttpClient _client;
+		private readonly string _api = "Large Files";
 
 		public LargeFiles(B2Options options) {
 			_options = options;

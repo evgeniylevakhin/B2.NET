@@ -7,9 +7,9 @@ using B2Net.Models;
 
 namespace B2Net {
 	public class Buckets : IBuckets {
-		private B2Options _options;
-		private HttpClient _client;
-		private string _api = "Buckets";
+		private readonly B2Options _options;
+		private readonly HttpClient _client;
+		private readonly string _api = "Buckets";
 
 		public Buckets(B2Options options) {
 			_options = options;

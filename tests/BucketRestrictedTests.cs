@@ -2,11 +2,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Threading.Tasks;
+using B2.Net.Tests;
 
 namespace B2Net.Tests {
 	[TestClass]
 	public class BucketRestrictedTests : BaseTest {
-		private string RestrictedBucketName = "B2Net-Test";
+		private readonly string RestrictedBucketName = "B2Net-Test";
 		private string BucketName = "";
 
 		[TestMethod]
